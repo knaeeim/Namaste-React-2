@@ -48,4 +48,5 @@ To render our React elements, we first target the `div` with `id="root"` in our 
 ```js
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(element);
+```
 
