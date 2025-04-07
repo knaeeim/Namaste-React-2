@@ -1,0 +1,19 @@
+## 📘 Inception: Introduction to React with CDN
+
+We’ve just scratched the surface of React and understood how **raw React** works using a simple setup with a CDN link.
+
+### 🔹 Setup Overview:
+1. First, we created a `div` with the `id="root"` inside our `index.html`.
+2. Then, we attached a JavaScript file to the HTML file where we’ll write React code using vanilla JavaScript.
+
+### 🔹 Writing React with Vanilla JavaScript:
+- Using the **CDN link** for React and ReactDOM, we get access to all React functions without any need for bundlers like Webpack or tools like Create React App.
+- We use `React.createElement()` to create elements instead of writing JSX. This method returns a React element (an object representing a DOM node).
+
+### 🔹 Virtual DOM:
+- One of React’s main features is the **Virtual DOM**. In plain JavaScript, any change in the DOM triggers a full reload or re-render of affected elements.
+- React solves this problem by maintaining a virtual DOM. It **compares the previous and current states** and updates only the parts of the real DOM that have changed — improving performance significantly.
+
+### 🔹 Rendering to the DOM:
+- We use `ReactDOM.createRoot()` to target the `div#root` and create a virtual root.
+- Then, we use `.render()` to render our React element to that root.
